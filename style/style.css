@@ -170,7 +170,7 @@ header .icons #menu-bars {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 7rem;
+    padding-top: 1.4rem;
 }
 
 .home .home-slider .slide .content {
@@ -183,7 +183,6 @@ header .icons #menu-bars {
 
 .home .home-slider .slide .image img {
     width: 100%;
-
 }
 
 .home .home-slider .slide .content span {

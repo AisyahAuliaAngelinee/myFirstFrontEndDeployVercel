@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- cdn awesome links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -38,9 +40,9 @@
 
     <!-- HOME SECTION START -->
     <section class="home" id="home">
-        <div class="home-slider">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our Special Dish</span>
                         <h3>Nasi Goreng Kasablangka</h3>
@@ -51,7 +53,7 @@
                         <img src="image/home/home-img-1.png" alt="">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our Special Dish</span>
                         <h3>Burger Goreng Ikan Asin</h3>
@@ -62,7 +64,7 @@
                         <img src="image/home/home-img-2.png" alt="">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our Special Dish</span>
                         <h3>Ayam Panggang Bakar</h3>
@@ -74,10 +76,12 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- HOME SECTION END -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- DOM file -->
     <script src="js/script.js"></script>
 </body>
