@@ -19,6 +19,14 @@
     transition: all .2s linear;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 html {
     font-size: 110%;
     overflow-x: hidden;
@@ -27,7 +35,7 @@ html {
 }
 
 section {
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     /* background: var(--white-light-color); */
 }
 
@@ -66,7 +74,7 @@ header {
     position: fixed;
     top: 0; left: 0; right: 0;
     background: var(--white);
-    padding: 1rem 7%;
+    padding: .5rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +84,7 @@ header {
 
 header .logo {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
 
@@ -85,7 +93,7 @@ header .logo i {
 }
 
 header .navbar a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color: var(--light-color);
@@ -204,7 +212,8 @@ header .icons #menu-bars {
 
 .home .home-slider .slide .content h3 {
     color: var(--black);
-    font-size: 3rem;
+    font-size: 2.3rem;
+    font-weight: bold;
 }
 
 .home .home-slider .slide .content p {
@@ -281,6 +290,52 @@ header .icons #menu-bars {
 }
 /* CUISINE END */
 
+/* DETAIL CUISINE START */
+.detail-cuisine {
+    max-width: 1200px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    min-height: 100dvh;
+}
+
+.detail-image {
+    background-color: var(--white-light-color);
+}
+
+.detail-description {
+    background-color: var(--white);
+    padding: 60px;
+}
+
+.detail-description .category {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* text-decoration: underline; */
+}
+
+.detail-description h3 {
+    color: var(--black);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.detail-description .price {
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.detail-description p {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin: 30px 0px;
+}
+/* DETAIL CUISINE END */
+
 /* MEDIA QUERIES START */
 @media (max-width: 991px) {
     html {
@@ -288,7 +343,7 @@ header .icons #menu-bars {
     }
 
     header {
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
     }
 
     section {
