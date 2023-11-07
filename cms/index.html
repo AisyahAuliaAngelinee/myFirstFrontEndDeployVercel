@@ -15,6 +15,21 @@
 </head>
 <body>
 
+    <!-- HEADER START -->
+    <header>
+        <a href="" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+        <nav class="navbar">
+            <a href="">Register</a>
+            <a href="">About Us</a>
+        </nav>
+        
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
     <!-- LOGIN FORM START -->
     <section class="login-page">
         <div class="wrapper">
@@ -26,7 +41,7 @@
                 <div class="input-box">
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
-                <button class="btn text-white px-2 py-1 rounded text- font-medium text-white bg-gray-800 border-0 border-l hover:bg-[#16a34a] dark:hover:text-white">Login</button>
+                <button class="btn-login">Login</button>
                 <div class="register-link">
                     <p>Don't have an account? <a href="#">Register</a></p>
                 </div>
@@ -34,5 +49,173 @@
         </div>
     </section>
     <!-- LOGIN FORM END -->
+
+    <!-- LIST ENTITAS UTAMA START -->
+    <section class="main-list">
+        <h3 class="sub-heading">List Cuisine</h3>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Name</th>
+                        <th scope="col" class="px-6 py-3">Description</th>
+                        <th scope="col" class="px-6 py-3">Price</th>
+                        <th scope="col" class="px-6 py-3">imgUrl</th>
+                        <th scope="col" class="px-6 py-3">categoryId</th>
+                        <th scope="col" class="px-6 py-3">authorId</th>
+                        <th scope="col" class="px-6 py-3">createdAt</th>
+                        <th scope="col" class="px-6 py-3">updatedAt</th>
+                        <th scope="col" class="px-6 py-3"><span class="sr-only">Edit</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Nasi Goreng Ayam Utuh</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp875.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ikan Bakar Ayam Panggang Goreng</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp75.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ayam Panggang Dada + Nasi</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp938.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ayam Lemon Panggang Ikan Teri</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp23.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Minyak Goreng Ayam Panggang</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp657.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Ayam Panggang Dada Goreng Tepung</th>
+                        <td class="px-6 py-4">Lorem ipsum, dolor sit amet</td>
+                        <td class="px-6 py-4">Rp90.000</td>
+                        <td class="px-6 py-4">ayam-panggang-goreng-tepung.</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4">08 Nov 2023</td>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- LIST ENTITAS UTAMA END -->
+
+    <!-- LIST ENTITAS SUPPORT START -->
+    <section class="main-list">
+        <h3 class="sub-heading">List Category</h3>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Name</th>
+                        <th scope="col" class="px-6 py-3"><span class="sr-only">Edit</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Heavy Meal</th>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Drinks</th>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Dessert</th>
+                        <td class="px-6 py-4 text-right">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- LIST ENTITAS SUPPORT END -->
+
+    <!-- REGISTER FORM START -->
+    <section class="regis-page">
+        <div class="wrapper">
+            <form action="">
+                <h1>REGISTER</h1>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="address" placeholder="Address" required>
+                </div>
+                <button class="btn-regis">Register</button>
+                <div class="login-link">
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- REGISTER FORM END -->
 </body>
 </html>
