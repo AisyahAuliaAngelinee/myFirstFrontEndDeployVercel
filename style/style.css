@@ -40,9 +40,9 @@ section {
     /* background: var(--white-light-color); */
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
     background: var(--white-light-color);
-}
+} */
 
 .sub-heading {
     text-align: center;
@@ -432,6 +432,94 @@ header .icons #menu-bars {
     text-decoration: underline;
 }
 /* LOGIN FORM END */
+
+/* CREATE FORM START */
+.create .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.create .row .image {
+    flex: 1 1 20rem;
+}
+
+.create .row .image img {
+    width: 100%;
+}
+
+.create .row form {
+    flex: 1 1 20rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.create .row form h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.create .row form .box {
+    margin: .5rem 0;
+    font-size: 1rem;
+    color: var(--black);
+    padding: .2rem;
+    width: 100%;
+}
+
+.create .row form textarea {
+    height: 10rem;
+    resize: none;
+}
+/* CREATE FORM END */
+
+/* EDIT FORM START */
+.edit .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.edit .row .image {
+    flex: 1 1 20rem;
+}
+
+.edit .row .image img {
+    width: 100%;
+}
+
+.edit .row form {
+    flex: 1 1 20rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.edit .row form h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.edit .row form .box {
+    margin: .5rem 0;
+    font-size: 1rem;
+    color: var(--black);
+    padding: .2rem;
+    width: 100%;
+}
+
+.edit .row form textarea {
+    height: 10rem;
+    resize: none;
+}
+/* EDIT FORM END */
 
 /* REGISTER FORM START */
 .regis-page {
