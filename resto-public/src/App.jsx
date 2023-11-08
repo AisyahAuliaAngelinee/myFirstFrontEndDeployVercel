@@ -4,6 +4,7 @@ import './App.css'
 
 function App() {
   const [showDetail, setShowDetail] = useState(false)
+
   const fnOnClickShowDetail = (event) => {
     event.preventDefault();
 
