@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800;900&display=swap");
+
+:root {
+	--green: #99cd88;
+	--black: #272829;
+	--white: #fff;
+	--light-color: #c2d1dd;
+	--white-light-color: #dce4ea;
+	--white-light-color2: #e3e3e3;
+	--box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+	font-family: "Geologica", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all 0.2s linear;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	font-size: 110%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5.5rem;
+}
+
+section {
+	padding: 1rem 9%;
+	/* background: var(--white-light-color); */
+}
+
+.sub-heading {
+	text-align: center;
+	color: var(--green);
+	font-size: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* HEADER START */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--white);
+	padding: 0.5rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: var(--box-shadow);
+}
+
+header .logo {
+	color: var(--black);
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+header .logo i {
+	color: var(--green);
+}
+
+header .navbar a {
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1.5rem;
+	color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+	color: var(--white);
+	background: var(--green);
+}
+
+header .icons i {
+	cursor: pointer;
+	margin-left: 0.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	width: 2.5rem;
+	text-align: center;
+	font-size: 1.1rem;
+	color: var(--black);
+	border-radius: 50%;
+	background: var(--white-light-color);
+}
+
+header .icons i:hover {
+	color: var(--white);
+	background: var(--green);
+	transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+	display: none;
+}
+/* HEADER END */
+
+/* SEARCH START */
+#search-form {
+	position: fixed;
+	top: -110%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1004;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+}
+
+#search-form.active {
+	top: 0;
+}
+
+#search-form #search-box {
+	width: 50rem;
+	border-bottom: 0.1rem solid var(--white);
+	padding: 1rem 0;
+	color: var(--white);
+	font-size: 1.5rem;
+	text-transform: none;
+	background: none;
+}
+
+#search-form #search-box::placeholder {
+	color: var(--white);
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+#search-form label {
+	color: var(--light-color);
+	cursor: pointer;
+	font-size: 1.4rem;
+}
+
+#search-form label:hover {
+	color: var(--green);
+}
+
+#search-form #close {
+	position: absolute;
+	color: var(--white);
+	cursor: pointer;
+	top: 2rem;
+	right: 3rem;
+	font-size: 2.4rem;
+}
+/* SEARCH END */
+
+/* HOME START */
+.home .home-slider .slide {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding-top: 1.4rem;
+}
+
+.home .home-slider .slide .content {
+	flex: 1 1 10rem;
+}
+
+.home .home-slider .slide .image {
+	flex: 1 1 15rem;
+}
+
+.home .home-slider .slide .image img {
+	width: 100%;
+}
+
+.home .home-slider .slide .content span {
+	color: var(--green);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.home .home-slider .slide .content h3 {
+	color: var(--black);
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+
+.home .home-slider .slide .content p {
+	color: var(--light-color);
+	font-size: 0.8rem 0;
+	padding: 0.5rem 0;
+	line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--green);
+}
+/* HOME END */
+
+/* CUISINE START */
+.cuisine .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1.5rem;
+}
+
+.cuisine .box-container .box {
+	padding: 1.5rem;
+	background: var(--white);
+	border-radius: 0.5rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.2);
+	box-shadow: var(--box-shadow);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.cuisine .box-container .box .fa-eye {
+	position: absolute;
+	top: 2rem;
+	background: var(--white);
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	line-height: 2rem;
+	font-size: 1rem;
+}
+
+.cuisine .box-container .box .fa-eye:hover {
+	background: var(--green);
+	color: white;
+}
+
+.cuisine .box-container .box .fa-eye {
+	left: -20rem;
+}
+
+.cuisine .box-container .box:hover .fa-eye {
+	left: 2rem;
+}
+
+.cuisine .box-container .box img {
+	height: auto;
+	width: 100%;
+	border-radius: 5%;
+}
+
+.cuisine .box-container .box h3 {
+	color: var(--black);
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.cuisine .box-container .box span {
+	color: var(--green);
+	font-weight: bolder;
+	margin-right: 1rem;
+	font-size: 2.5rem;
+}
+/* CUISINE END */
+
+/* DETAIL CUISINE START */
+.detail-cuisine {
+	max-width: 1200px;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 50px auto;
+	min-height: 100dvh;
+}
+
+.detail-image {
+	background-color: var(--light-color);
+}
+
+.detail-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.detail-description {
+	background-color: var(--white);
+	padding: 60px;
+}
+
+.detail-description .category {
+	color: var(--green);
+	font-size: 2.5rem;
+	font-weight: bolder;
+	/* text-decoration: underline; */
+}
+
+.detail-description h3 {
+	color: var(--black);
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.detail-description .price {
+	font-size: 1rem;
+	color: var(--green);
+	font-weight: bold;
+}
+
+.detail-description p {
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	margin: 30px 0px;
+}
+/* DETAIL CUISINE END */

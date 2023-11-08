@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800;900&display=swap");
+
+:root {
+	--green: #99cd88;
+	--black: #272829;
+	--white: #fff;
+	--light-color: #c2d1dd;
+	--white-light-color: #dce4ea;
+	--white-light-color2: #e3e3e3;
+	--box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+	font-family: "Geologica", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all 0.2s linear;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	font-size: 110%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5.5rem;
+}
+
+section {
+	padding: 1rem 9%;
+	/* background: var(--white-light-color); */
+}
+
+/* section:nth-child(even) {
+    background: var(--white-light-color);
+} */
+
+.sub-heading {
+	text-align: center;
+	color: var(--green);
+	font-size: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 0.8rem;
+	color: var(--white);
+	background: var(--black);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	padding: 0.5rem 1.4rem;
+}
+
+.btn:hover {
+	background: var(--green);
+	letter-spacing: 0.1rem;
+}
+
+/* HEADER START */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--white);
+	padding: 0.5rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: var(--box-shadow);
+}
+
+header .logo {
+	color: var(--black);
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+header .logo i {
+	color: var(--green);
+}
+
+header .navbar a {
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1.5rem;
+	color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+	color: var(--white);
+	background: var(--green);
+}
+
+header .icons i {
+	cursor: pointer;
+	margin-left: 0.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	width: 2.5rem;
+	text-align: center;
+	font-size: 1.1rem;
+	color: var(--black);
+	border-radius: 50%;
+	background: var(--white-light-color);
+}
+
+header .icons i:hover {
+	color: var(--white);
+	background: var(--green);
+	transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+	display: none;
+}
+/* HEADER END */
+
+/* LOGIN FORM START */
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+	background: url(https://akcdn.detik.net.id/community/media/visual/2022/04/27/ilustrasi-restoran-1_169.jpeg?w=700&q=90)
+		no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.login-page .wrapper {
+	width: 420px;
+	background: transparent;
+	border-radius: 0.8rem;
+	padding: 1rem 2rem;
+	backdrop-filter: blur(0.7rem);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .wrapper h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: var(--white);
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.login-page .wrapper .input-box {
+	width: 100%;
+	height: 50px;
+	background: var(--white-light-color2);
+	border-radius: 0.5rem;
+	margin: 30px 0;
+}
+
+.login-page .wrapper .input-box input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 0.2rem solid rgb(255, 255, 255, 0.2);
+	border-radius: 0.3rem;
+	padding: 20px 45px 20px 20px;
+}
+
+.login-page .wrapper .input-box input::placeholder {
+	color: var(--black);
+}
+
+.login-page .wrapper .btn-login {
+	width: 100%;
+	height: 2.3rem;
+	background: var(--green);
+	border: none;
+	outline: none;
+	border-radius: 1.3rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 1rem;
+	color: var(--white);
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.login-page .wrapper .register-link {
+	font-size: 1rem;
+	text-align: center;
+	margin: 2rem 0 1rem;
+}
+
+.login-page .wrapper .register-link p {
+	color: var(--white);
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.login-page .wrapper .register-link p a {
+	color: var(--green);
+	text-decoration: none;
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.login-page .wrapper .register-link p a:hover {
+	text-decoration: underline;
+}
+/* LOGIN FORM END */
