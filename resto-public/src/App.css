@@ -46,7 +46,7 @@ section {
 	text-align: center;
 	color: var(--green);
 	font-size: 3rem;
-	padding-top: 1rem;
+	padding-top: 4rem;
 	padding-bottom: 1.5rem;
 	font-weight: bold;
 	text-decoration: underline;
@@ -232,30 +232,6 @@ header .icons #menu-bars {
 	position: relative;
 	overflow: hidden;
 	text-align: center;
-}
-
-.cuisine .box-container .box .fa-eye {
-	position: absolute;
-	top: 2rem;
-	background: var(--white);
-	border-radius: 50%;
-	height: 2rem;
-	width: 2rem;
-	line-height: 2rem;
-	font-size: 1rem;
-}
-
-.cuisine .box-container .box .fa-eye:hover {
-	background: var(--green);
-	color: white;
-}
-
-.cuisine .box-container .box .fa-eye {
-	left: -20rem;
-}
-
-.cuisine .box-container .box:hover .fa-eye {
-	left: 2rem;
 }
 
 .cuisine .box-container .box img {
