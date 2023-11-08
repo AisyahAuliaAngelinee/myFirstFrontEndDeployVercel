@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Header from '../pages/Header';
-import Cuisine from '../pages/Cuisine';
 import Detail from '../pages/Detail';
 import Footer from '../components/Footer';
 import Slide from '../components/Swiper';
@@ -67,7 +66,20 @@ function App() {
       {/* <!-- HOME SECTION END --> */}
 
       {/* <!-- CUISINE SECTION START --> */}
-      <Cuisine />
+      <section class="cuisine" id="cuisine">
+        <h3 class="sub-heading">Our Cuisine</h3>
+        <div class="box-container">
+          {cuisine.map((cus) => (
+            <div class="box flex flex-col items-center" key={cus.id}>
+              <img src="#" alt="" />
+              <h3>{cus.name}</h3>
+              <p flex flex-wrap>{cus.description}</p>
+              <span>Rp{cus.price}</span>
+              <button class="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:text-gray-400 dark:hover:text-white">Detail</button>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* <!-- CUISINE SECTION END --> */}
 
       {/* <!-- PAGINATION START --> */}

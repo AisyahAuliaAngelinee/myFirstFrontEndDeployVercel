@@ -223,3 +223,137 @@ header .icons #menu-bars {
 	text-decoration: underline;
 }
 /* LOGIN FORM END */
+
+/* CREATE FORM START */
+.create .row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.create .row .image {
+	flex: 1 1 20rem;
+}
+
+.create .row .image img {
+	width: 100%;
+}
+
+.create .row form {
+	flex: 1 1 20rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.create .row form h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--green);
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+}
+
+.create .row form .box {
+	margin: 0.5rem 0;
+	font-size: 1rem;
+	color: var(--black);
+	padding: 0.2rem;
+	width: 100%;
+}
+
+.create .row form textarea {
+	height: 10rem;
+	resize: none;
+}
+/* CREATE FORM END */
+
+/* REGISTER FORM START */
+.regis-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+	background: url(https://akcdn.detik.net.id/community/media/visual/2022/04/27/ilustrasi-restoran-1_169.jpeg?w=700&q=90)
+		no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.regis-page .wrapper {
+	width: 420px;
+	background: transparent;
+	border-radius: 0.8rem;
+	padding: 1rem 2rem;
+	backdrop-filter: blur(0.7rem);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.regis-page .wrapper h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: var(--white);
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.regis-page .wrapper .input-box {
+	width: 100%;
+	height: 50px;
+	background: var(--white-light-color2);
+	border-radius: 0.5rem;
+	margin: 30px 0;
+}
+
+.regis-page .wrapper .input-box input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 0.2rem solid rgb(255, 255, 255, 0.2);
+	border-radius: 0.3rem;
+	padding: 20px 45px 20px 20px;
+}
+
+.regis-page .wrapper .input-box input::placeholder {
+	color: var(--black);
+}
+
+.regis-page .wrapper .btn-regis {
+	width: 100%;
+	height: 2.3rem;
+	background: var(--green);
+	border: none;
+	outline: none;
+	border-radius: 1.3rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 1rem;
+	color: var(--white);
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.regis-page .wrapper .login-link {
+	font-size: 1rem;
+	text-align: center;
+	margin: 2rem 0 1rem;
+}
+
+.regis-page .wrapper .login-link p {
+	color: var(--white);
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.regis-page .wrapper .login-link p a {
+	color: var(--green);
+	text-decoration: none;
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.682);
+}
+
+.regis-page .wrapper .login-link p a:hover {
+	text-decoration: underline;
+}
+/* REGISTER FORM END */
