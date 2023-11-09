@@ -6,9 +6,9 @@ import "../App.css";
 const Parent = () => {
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Outlet />
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

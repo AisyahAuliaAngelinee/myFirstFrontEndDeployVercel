@@ -13,7 +13,7 @@ const Cuisine = () => {
 	// ? NAVIGATION
 	const navigate = useNavigate();
 	const detailOnClick = (id) => {
-		navigate(`/detail/${id}`);
+		navigate(`detail/${id}`);
 	};
 
 	// ? FETCH DATA
