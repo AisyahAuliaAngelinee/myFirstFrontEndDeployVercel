@@ -177,7 +177,7 @@ header .icons #menu-bars {
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 2rem;
-	padding-top: 1.4rem;
+	padding-top: 5rem;
 }
 
 .home .home-slider .slide .content {
@@ -189,7 +189,8 @@ header .icons #menu-bars {
 }
 
 .home .home-slider .slide .image img {
-	width: 100%;
+	width: 90%;
+	border-radius: 10rem;
 }
 
 .home .home-slider .slide .content span {
@@ -205,7 +206,7 @@ header .icons #menu-bars {
 }
 
 .home .home-slider .slide .content p {
-	color: var(--light-color);
+	color: var(--black);
 	font-size: 0.8rem 0;
 	padding: 0.5rem 0;
 	line-height: 1.5;

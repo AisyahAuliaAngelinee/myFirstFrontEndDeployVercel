@@ -1,7 +1,6 @@
 import { useState } from "react";
-import App from "../App";
 
-const Cuisine = () => {
+const Cuisine = ({ detailOnClick }) => {
     const [cuisine, setCuisine] = useState(
         [
             {
@@ -65,7 +64,7 @@ const Cuisine = () => {
                         <h3>{cus.name}</h3>
                         <p flex flex-wrap>{cus.description}</p>
                         <span>Rp. {cus.price}</span>
-                        <button className="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:hover:text-white">Detail</button>
+                        <button className="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:hover:text-white" onClick={detailOnClick}>Detail</button>
                     </div>
                 ))}
             </div>
