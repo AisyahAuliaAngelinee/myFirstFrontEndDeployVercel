@@ -65,7 +65,7 @@ const Cuisine = () => {
                         <h3>{cus.name}</h3>
                         <p flex flex-wrap>{cus.description}</p>
                         <span>Rp. {cus.price}</span>
-                        <button className="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:hover:text-white" onClick={<App fnOnClickShowDetail />}>Detail</button>
+                        <button className="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:hover:text-white">Detail</button>
                     </div>
                 ))}
             </div>
