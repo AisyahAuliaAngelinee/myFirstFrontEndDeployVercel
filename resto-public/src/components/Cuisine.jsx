@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import axios from "axios";
 
-const Cuisine = ({ detailOnClick }) => {
+const Cuisine = () => {
 	const CUISINE_PUBLIC_SERVER_URL = "http://localhost:3000/cuisine";
 	const cuisineApi = axios.create({ baseURL: CUISINE_PUBLIC_SERVER_URL });
 	const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +46,7 @@ const Cuisine = ({ detailOnClick }) => {
 						<span>Rp. {cus.price}</span>
 						<button
 							className="text-white px-2.5 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#15803d] dark:hover:text-white"
-							onClick={detailOnClick}>
+							onClick={() => detailOnClick(cus.id)}>
 							Detail
 						</button>
 					</div>
