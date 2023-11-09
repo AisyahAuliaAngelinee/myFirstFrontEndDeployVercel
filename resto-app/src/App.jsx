@@ -1,42 +1,48 @@
-import { useState } from 'react'
-import './App.css'
-import Header from '../components/Navbar'
-import Login from '../components/Login'
-import Form from '../components/Form'
-import MainTable from '../components/mainTable'
-import SupportTable from '../components/SupportTable'
-import Register from '../components/Register'
-
+import { useState, useEffect } from "react";
+import axios from "axios";
+import "./App.css";
+import Header from "../components/Navbar";
+import Login from "../components/Login";
+import Form from "../components/Form";
+import MainTable from "../components/mainTable";
+import SupportTable from "../components/SupportTable";
+import Register from "../components/Register";
 
 function App() {
-  const [loginData, setLoginData] = useState("")
-  return (
-    <>
-      {/* HEADER START */}
-      <Header />
-      {/* HEADER END */}
+	const [isLoading, setIsLoading] = useState(true);
+	const [error, setError] = useState(null);
+	const [cuisine, setCuisine] = useState([]);
 
-      {/* <!-- LOGIN FORM START --> */}
-      <Login />
-      {/* <!-- LOGIN FORM END --> */}
+	useEffect(() => {
+		async;
+	});
+	return (
+		<>
+			{/* HEADER START */}
+			<Header />
+			{/* HEADER END */}
 
-      {/* <!-- LIST ENTITAS UTAMA START --> */}
-      <MainTable />
-      {/* <!-- LIST ENTITAS UTAMA END --> */}
+			{/* <!-- LOGIN FORM START --> */}
+			<Login />
+			{/* <!-- LOGIN FORM END --> */}
 
-      {/* <!-- FORM CREATE CUISINE START --> */}
-      <Form />
-      {/* <!-- FORM CREATE CUISINE END --> */}
+			{/* <!-- LIST ENTITAS UTAMA START --> */}
+			<MainTable />
+			{/* <!-- LIST ENTITAS UTAMA END --> */}
 
-      {/* <!-- LIST ENTITAS SUPPORT START --> */}
-      <SupportTable />
-      {/* <!-- LIST ENTITAS SUPPORT END --> */}
+			{/* <!-- FORM CREATE CUISINE START --> */}
+			<Form />
+			{/* <!-- FORM CREATE CUISINE END --> */}
 
-      {/* <!-- REGISTER FORM START --> */}
-      <Register />
-      {/* <!-- REGISTER FORM END --> */}
-    </>
-  )
+			{/* <!-- LIST ENTITAS SUPPORT START --> */}
+			<SupportTable />
+			{/* <!-- LIST ENTITAS SUPPORT END --> */}
+
+			{/* <!-- REGISTER FORM START --> */}
+			<Register />
+			{/* <!-- REGISTER FORM END --> */}
+		</>
+	);
 }
 
-export default App
+export default App;

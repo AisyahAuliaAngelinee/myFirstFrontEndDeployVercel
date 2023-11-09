@@ -10,60 +10,6 @@ function App() {
 		setShowDetail(true);
 	};
 
-	// DATA
-	// const [cuisine, setCuisine] = useState(
-	//   [
-	//     {
-	//       id: 1,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//     {
-	//       id: 2,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//     {
-	//       id: 3,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//     {
-	//       id: 4,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//     {
-	//       id: 5,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//     {
-	//       id: 6,
-	//       name: "Nasi Goreng Seafood",
-	//       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	//       price: 25000,
-	//       imgUrl: "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	//       categoryId: 1,
-	//     },
-	//   ]
-	// )
-
 	return (
 		<>
 			{/* <!-- HEADER START --> */}
