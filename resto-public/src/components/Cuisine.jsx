@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import axios from "axios";
 
@@ -8,6 +9,12 @@ const Cuisine = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [cuisine, setCuisine] = useState([]);
+
+	// ? NAVIGATION
+	const navigate = useNavigate();
+	const detailOnClick = (id) => {
+		navigate(`/detail/${id}`);
+	};
 
 	// ? FETCH DATA
 	useEffect(() => {
