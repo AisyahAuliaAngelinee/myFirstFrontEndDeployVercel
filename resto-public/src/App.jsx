@@ -1,18 +1,10 @@
-import { useState } from "react";
-import "./App.css";
-import Cuisine from "./components/Cuisine";
-import Navbar from "./components/Navbar";
+import router from "./routers";
+import { RouterProvider } from "react-router-dom";
 
 function App() {
 	return (
 		<>
-			{/* <!-- HEADER START --> */}
-			<Navbar />
-			{/* <!-- HEADER END --> */}
-
-			{/* <!-- CUISINE SECTION START --> */}
-			<Cuisine />
-			{/* <!-- CUISINE SECTION END --> */}
+			<RouterProvider router={router} />
 		</>
 	);
 }

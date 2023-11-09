@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import React from "react";
 import axios from "axios";
 
 const Cuisine = ({ detailOnClick }) => {
@@ -7,63 +8,6 @@ const Cuisine = ({ detailOnClick }) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [cuisine, setCuisine] = useState([]);
-
-	// const [cuisine, setCuisine] = useState([
-	// 	{
-	// 		id: 1,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// 	{
-	// 		id: 2,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// 	{
-	// 		id: 3,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// 	{
-	// 		id: 4,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// 	{
-	// 		id: 5,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// 	{
-	// 		id: 6,
-	// 		name: "Nasi Goreng Seafood",
-	// 		description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-	// 		price: 25000,
-	// 		imgUrl:
-	// 			"https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
-	// 		categoryId: 1,
-	// 	},
-	// ]);
 
 	// ? FETCH DATA
 	useEffect(() => {
