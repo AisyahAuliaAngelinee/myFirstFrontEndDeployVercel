@@ -281,12 +281,12 @@ header .icons #menu-bars {
 	padding: 60px;
 }
 
-.detail-description .category {
+/* .detail-description .category {
 	color: var(--green);
 	font-size: 2.5rem;
-	font-weight: bolder;
-	/* text-decoration: underline; */
-}
+	font-weight: bolder; */
+/* text-decoration: underline; */
+/* } */
 
 .detail-description h3 {
 	color: var(--black);
