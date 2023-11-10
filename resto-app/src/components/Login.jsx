@@ -21,26 +21,25 @@ const Login = () => {
 		setPassword(event.target.value);
 	};
 
-	// const token =
-
 	const loginSubmit = async (event) => {
 		event.preventDefault();
-		// console.log(email, password, "<<<<<<<<<");
+		console.log(email, password, "<<<<<<<<<");
 
+		// !PINJEM SERVER K ADNAN
 		try {
 			const response = await axios.post(
-				`https://phase2-aio.vercel.app/apis/login`,
+				`https://server.tabletime.online/user/login`,
 				{
 					email,
 					password,
 				}
 			);
-			// console.log(response, "<<LOGIN INPUT>>");
+			console.log(response, "<<LOGIN INPUT>>");
 
-			localStorage.setItem("token", response.data.data.access_token);
+			localStorage.setItem("token", response.data.access_token);
 
-			// NAVIGATE TO HOMEPAGE (SERVER)
-			navigate("/apis/restaurant-app/cuisines");
+			// // NAVIGATE TO HOMEPAGE (SERVER)
+			navigate("/cuisines");
 		} catch (error) {
 			console.log(error.message);
 		}
