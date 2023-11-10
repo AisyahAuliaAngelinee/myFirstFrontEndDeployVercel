@@ -34,7 +34,7 @@ const Cuisine = () => {
 
 	// ? SEARCH
 	const searchCuisine = (event) => {
-		console.log(event.target.value, "<<<<<");
+		// console.log(event.target.value, "<<<<<");
 		setSearchInput(event.target.value);
 	};
 

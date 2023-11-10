@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 				element: <Login />,
 			},
 			{
-				path: "/maintable",
+				path: "/apis/restaurant-app/cuisines",
 				element: <MainTable />,
 			},
 		],

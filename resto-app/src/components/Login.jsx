@@ -25,7 +25,7 @@ const Login = () => {
 
 	const loginSubmit = async (event) => {
 		event.preventDefault();
-		console.log(email, password, "<<<<<<<<<");
+		// console.log(email, password, "<<<<<<<<<");
 
 		try {
 			const response = await axios.post(
@@ -35,12 +35,12 @@ const Login = () => {
 					password,
 				}
 			);
-			console.log(response, "<<LOGIN INPUT>>");
+			// console.log(response, "<<LOGIN INPUT>>");
 
 			localStorage.setItem("token", response.data.data.access_token);
 
 			// NAVIGATE TO HOMEPAGE (SERVER)
-			navigate("/mainTable");
+			navigate("/apis/restaurant-app/cuisines");
 		} catch (error) {
 			console.log(error.message);
 		}
