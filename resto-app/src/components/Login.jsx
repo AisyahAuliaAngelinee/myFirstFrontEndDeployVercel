@@ -1,12 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	const RESTO_ADMIN_SERVER_URL = "https://phase2-aio.vercel.app";
-	const adminApi = axios.create({ baseURL: RESTO_ADMIN_SERVER_URL });
+	// const RESTO_ADMIN_SERVER_URL = "https://phase2-aio.vercel.app";
+	// const adminApi = axios.create({ baseURL: RESTO_ADMIN_SERVER_URL });
+
+	// ?NAVIGASI SETELAH LOGIN
+	const navigate = useNavigate();
 
 	// ?LOGIN EVENT
 	const isEmail = (event) => {
@@ -16,6 +20,8 @@ const Login = () => {
 	const isPassword = (event) => {
 		setPassword(event.target.value);
 	};
+
+	// const token =
 
 	const loginSubmit = async (event) => {
 		event.preventDefault();
@@ -30,6 +36,11 @@ const Login = () => {
 				}
 			);
 			console.log(response, "<<LOGIN INPUT>>");
+
+			localStorage.setItem("token", response.data.data.access_token);
+
+			// NAVIGATE TO HOMEPAGE (SERVER)
+			navigate("/mainTable");
 		} catch (error) {
 			console.log(error.message);
 		}
@@ -61,7 +72,9 @@ const Login = () => {
 								required
 							/>
 						</div>
-						<button className="btn-login">Login</button>
+						<button className="btn-login" type="submit">
+							Login
+						</button>
 						<div className="register-link">
 							<p>
 								Don't have an account? <a href="#">Register</a>
