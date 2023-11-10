@@ -206,44 +206,69 @@
 
 // export default App;
 
-import { useState, useEffect } from "react";
-import axios from "axios";
-import "./App.css";
-import Header from "../components/Navbar";
-import Login from "../components/Login";
-import Form from "../components/Form";
-import MainTable from "../components/mainTable";
-import SupportTable from "../components/SupportTable";
-import Register from "../components/Register";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
+// import "./App.css";
+// import Header from "../components/Navbar";
+// import Login from "../components/Login";
+// import Form from "../components/Form";
+// import MainTable from "../components/mainTable";
+// import SupportTable from "../components/SupportTable";
+// import Register from "../components/Register";
 
-function App() {
-	return (
-		<>
-			{/* HEADER START */}
-			<Header />
-			{/* HEADER END */}
+// function App() {
+// 	return (
+// 		<>
+// 			{/* HEADER START */}
+// 			<Header />
+// 			{/* HEADER END */}
 
-			{/* <!-- LOGIN FORM START --> */}
-			<Login />
-			{/* <!-- LOGIN FORM END --> */}
+// 			{/* <!-- LOGIN FORM START --> */}
+// 			<Login />
+// 			{/* <!-- LOGIN FORM END --> */}
 
-			{/* <!-- LIST ENTITAS UTAMA START --> */}
-			<MainTable />
-			{/* <!-- LIST ENTITAS UTAMA END --> */}
+// 			{/* <!-- LIST ENTITAS UTAMA START --> */}
+// 			<MainTable />
+// 			{/* <!-- LIST ENTITAS UTAMA END --> */}
 
-			{/* <!-- FORM CREATE CUISINE START --> */}
-			<Form />
-			{/* <!-- FORM CREATE CUISINE END --> */}
+// 			{/* <!-- FORM CREATE CUISINE START --> */}
+// 			<Form />
+// 			{/* <!-- FORM CREATE CUISINE END --> */}
 
-			{/* <!-- LIST ENTITAS SUPPORT START --> */}
-			<SupportTable />
-			{/* <!-- LIST ENTITAS SUPPORT END --> */}
+// 			{/* <!-- LIST ENTITAS SUPPORT START --> */}
+// 			<SupportTable />
+// 			{/* <!-- LIST ENTITAS SUPPORT END --> */}
 
-			{/* <!-- REGISTER FORM START --> */}
-			<Register />
-			{/* <!-- REGISTER FORM END --> */}
-		</>
-	);
-}
+// 			{/* <!-- REGISTER FORM START --> */}
+// 			<Register />
+// 			{/* <!-- REGISTER FORM END --> */}
+// 		</>
+// 	);
+// }
 
-export default App;
+// export default App;
+
+<section class="login-page">
+	<div class="wrapper">
+		<form action="">
+			<h1>Login</h1>
+			<div class="input-box">
+				<input type="text" name="username" placeholder="Username" required />
+			</div>
+			<div class="input-box">
+				<input
+					type="password"
+					name="password"
+					placeholder="Password"
+					required
+				/>
+			</div>
+			<button class="btn-login">Login</button>
+			<div class="register-link">
+				<p>
+					Don't have an account? <a href="#">Register</a>
+				</p>
+			</div>
+		</form>
+	</div>
+</section>;
