@@ -10,26 +10,26 @@
 		},
 		{
 			"id": 2,
-			"name": "Nasi Goreng Seafood",
+			"name": "Ikan Bakar Asam Manis",
 			"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-			"price": 25000,
-			"imgUrl": "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
+			"price": 105000,
+			"imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Gurame_bakar_kecap_2.JPG/544px-Gurame_bakar_kecap_2.JPG",
 			"categoryId": 1
 		},
 		{
 			"id": 3,
-			"name": "Nasi Goreng Seafood",
+			"name": "Iga Bakar Sambal Ijo",
 			"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-			"price": 25000,
-			"imgUrl": "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
+			"price": 96000,
+			"imgUrl": "https://asset.kompas.com/crops/l5W98MPfs_1_g4aaa26XZcI4lQ8=/0x210:750x710/750x500/data/photo/2022/04/17/625bf02425856.jpg",
 			"categoryId": 1
 		},
 		{
 			"id": 4,
-			"name": "Nasi Goreng Seafood",
+			"name": "Ayam Goreng Sambal Matah",
 			"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-			"price": 25000,
-			"imgUrl": "https://dcostseafood.id/wp-content/uploads/2017/12/Nasi-Goreng-seafood-2.jpg",
+			"price": 35000,
+			"imgUrl": "https://img-global.cpcdn.com/recipes/e41e045367aeb8ea/1360x964cq70/ayam-goreng-sambal-matah-foto-resep-utama.webp",
 			"categoryId": 1
 		},
 		{
