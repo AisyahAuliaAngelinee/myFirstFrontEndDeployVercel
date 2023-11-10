@@ -1,7 +1,75 @@
+import { useState } from "react";
+import axios from "axios";
+import "../App.css";
+
 const Login = () => {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const RESTO_ADMIN_SERVER_URL = "https://phase2-aio.vercel.app";
+	const adminApi = axios.create({ baseURL: RESTO_ADMIN_SERVER_URL });
+
+	// ?LOGIN EVENT
+	const isEmail = (event) => {
+		setEmail(event.target.value);
+	};
+
+	const isPassword = (event) => {
+		setPassword(event.target.value);
+	};
+
+	const loginSubmit = async (event) => {
+		event.preventDefault();
+		console.log(email, password, "<<<<<<<<<");
+
+		try {
+			const response = await axios.post(
+				`https://phase2-aio.vercel.app/apis/login`,
+				{
+					email,
+					password,
+				}
+			);
+			console.log(response, "<<LOGIN INPUT>>");
+		} catch (error) {
+			console.log(error.message);
+		}
+	};
+
 	return (
 		<>
-			<h1>Login</h1>
+			<section className="login-page">
+				<div className="wrapper">
+					<form action="" onSubmit={loginSubmit}>
+						<h1>Login</h1>
+						<div className="input-box">
+							<input
+								onChange={isEmail}
+								type="text"
+								name="username"
+								placeholder="Username"
+								value={email}
+								required
+							/>
+						</div>
+						<div className="input-box">
+							<input
+								onChange={isPassword}
+								type="password"
+								name="password"
+								placeholder="Password"
+								value={password}
+								required
+							/>
+						</div>
+						<button className="btn-login">Login</button>
+						<div className="register-link">
+							<p>
+								Don't have an account? <a href="#">Register</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</section>
 		</>
 	);
 };
