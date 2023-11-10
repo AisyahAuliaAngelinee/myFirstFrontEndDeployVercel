@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<>
 			<Cuisine />
-			<Pagination />
+			{/* <Pagination /> */}
 		</>
 	);
 };

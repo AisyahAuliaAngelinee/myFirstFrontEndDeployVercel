@@ -14,10 +14,12 @@ const Detail = () => {
 		async function fetchData() {
 			try {
 				setLoading(true);
-				const { data } = await axios.get(`http://localhost:3000/cuisine/${id}`);
+				const { data } = await axios.get(
+					`http://localhost:3000/pub/cuisine/${id}`
+				);
 				// console.log(data, "<<<<<<<<<");
 
-				setData(data);
+				setData(data.idCus);
 			} catch (error) {
 				console.log(error);
 				setError(error);
@@ -44,10 +46,7 @@ const Detail = () => {
 						<span class="price">Rp. {data.price}</span>
 						<p>{data.description}</p>
 						<button class="text-white px-4 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#16a34a] dark:text-gray-400 dark:hover:text-white">
-							Edit
-						</button>
-						<button class="text-white px-2 py-1 rounded text-sm font-medium bg-gray-800 border-0 border-l hover:bg-[#dc2626] dark:text-gray-400 dark:hover:text-white">
-							Delete
+							Back
 						</button>
 					</div>
 				</div>

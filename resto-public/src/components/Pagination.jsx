@@ -2,10 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 
 const Pagination = () => {
-	// Data from Server
-	const CUISINE_PUBLIC_SERVER_URL = "http://localhost:3000/cuisine";
-	const cuisineApi = axios.create({ baseURL: CUISINE_PUBLIC_SERVER_URL });
-
 	// Pagination
 
 	return (
@@ -18,12 +14,14 @@ const Pagination = () => {
 					<div class="inline-flex mt-2 xs:mt-0">
 						<button
 							class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 rounded-l hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white"
-							onClick={prePage}>
+							// onClick={prePage}
+						>
 							Prev
 						</button>
 						<button
 							class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 border-0 border-l rounded-r hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white"
-							onClick={nextPage}>
+							// onClick={nextPage}
+						>
 							Next
 						</button>
 					</div>
