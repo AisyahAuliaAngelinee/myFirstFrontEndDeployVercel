@@ -150,56 +150,98 @@
 
 // export default App;
 
+// import "./App.css";
+// import Cuisine from "./components/Cuisine";
+// import Navbar from "./components/Navbar";
+// import router from "./routers";
+// import { RouterProvider } from "react-router-dom";
+
+// function App() {
+// 	return (
+// 		<>
+// 			{/* <!-- HEADER START --> */}
+// 			<Navbar />
+// 			{/* <!-- HEADER END --> */}
+
+// 			{/* <!-- CUISINE SECTION START --> */}
+// 			<Cuisine />
+// 			{/* <!-- CUISINE SECTION END --> */}
+
+// 			{/* <!-- PAGINATION START --> */}
+// 			<section class="pagination flex place-content-center">
+// 				<div class="flex flex-col w-[7rem] h-20 place-content-center">
+// 					{/* <!-- Help text --> */}
+// 					<span class="text-sm text-black">
+// 						Showing <span class="font-semibold text-black">1</span> to{" "}
+// 						<span class="font-semibold text-black">6</span>
+// 					</span>
+// 					{/* <!-- Buttons --> */}
+// 					<div class="inline-flex mt-2 xs:mt-0">
+// 						<button class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 rounded-l hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white">
+// 							Prev
+// 						</button>
+// 						<button class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 border-0 border-l rounded-r hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white">
+// 							Next
+// 						</button>
+// 					</div>
+// 				</div>
+// 			</section>
+// 			{/* <!-- PAGINATION END --> */}
+
+// 			{/* <!-- FOOTER START --> */}
+// 			<footer>
+// 				<div className="w-full bg-Gray-300 p-4 text-center text-neutral-700">
+// 					{" "}
+// 					© 2023 Copyright:
+// 					<a className="text-neutral-800 dark:text-black" href="">
+// 						{" "}
+// 						Aisyah Aulia Angelinee
+// 					</a>
+// 				</div>
+// 			</footer>
+// 			{/* <!-- FOOTER END --> */}
+// 		</>
+// 	);
+// }
+
+// export default App;
+
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./App.css";
-import Cuisine from "./components/Cuisine";
-import Navbar from "./components/Navbar";
-import router from "./routers";
-import { RouterProvider } from "react-router-dom";
+import Header from "../components/Navbar";
+import Login from "../components/Login";
+import Form from "../components/Form";
+import MainTable from "../components/mainTable";
+import SupportTable from "../components/SupportTable";
+import Register from "../components/Register";
 
 function App() {
 	return (
 		<>
-			{/* <!-- HEADER START --> */}
-			<Navbar />
-			{/* <!-- HEADER END --> */}
+			{/* HEADER START */}
+			<Header />
+			{/* HEADER END */}
 
-			{/* <!-- CUISINE SECTION START --> */}
-			<Cuisine />
-			{/* <!-- CUISINE SECTION END --> */}
+			{/* <!-- LOGIN FORM START --> */}
+			<Login />
+			{/* <!-- LOGIN FORM END --> */}
 
-			{/* <!-- PAGINATION START --> */}
-			<section class="pagination flex place-content-center">
-				<div class="flex flex-col w-[7rem] h-20 place-content-center">
-					{/* <!-- Help text --> */}
-					<span class="text-sm text-black">
-						Showing <span class="font-semibold text-black">1</span> to{" "}
-						<span class="font-semibold text-black">6</span>
-					</span>
-					{/* <!-- Buttons --> */}
-					<div class="inline-flex mt-2 xs:mt-0">
-						<button class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 rounded-l hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white">
-							Prev
-						</button>
-						<button class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 border-0 border-l rounded-r hover:bg-[#A6CF98] dark:text-gray-400 dark:hover:text-white">
-							Next
-						</button>
-					</div>
-				</div>
-			</section>
-			{/* <!-- PAGINATION END --> */}
+			{/* <!-- LIST ENTITAS UTAMA START --> */}
+			<MainTable />
+			{/* <!-- LIST ENTITAS UTAMA END --> */}
 
-			{/* <!-- FOOTER START --> */}
-			<footer>
-				<div className="w-full bg-Gray-300 p-4 text-center text-neutral-700">
-					{" "}
-					© 2023 Copyright:
-					<a className="text-neutral-800 dark:text-black" href="">
-						{" "}
-						Aisyah Aulia Angelinee
-					</a>
-				</div>
-			</footer>
-			{/* <!-- FOOTER END --> */}
+			{/* <!-- FORM CREATE CUISINE START --> */}
+			<Form />
+			{/* <!-- FORM CREATE CUISINE END --> */}
+
+			{/* <!-- LIST ENTITAS SUPPORT START --> */}
+			<SupportTable />
+			{/* <!-- LIST ENTITAS SUPPORT END --> */}
+
+			{/* <!-- REGISTER FORM START --> */}
+			<Register />
+			{/* <!-- REGISTER FORM END --> */}
 		</>
 	);
 }

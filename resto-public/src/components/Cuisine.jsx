@@ -43,6 +43,7 @@ const Cuisine = () => {
 		fetchCuisine();
 	};
 
+	// ? FETCH DATA
 	async function fetchCuisine() {
 		try {
 			setIsLoading(true);
@@ -61,7 +62,6 @@ const Cuisine = () => {
 		}
 	}
 
-	// ? FETCH DATA
 	useEffect(() => {
 		fetchCuisine();
 	}, [currentPage]);

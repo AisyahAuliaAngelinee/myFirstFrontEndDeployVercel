@@ -9,13 +9,6 @@ import SupportTable from "../components/SupportTable";
 import Register from "../components/Register";
 
 function App() {
-	const [isLoading, setIsLoading] = useState(true);
-	const [error, setError] = useState(null);
-	const [cuisine, setCuisine] = useState([]);
-
-	useEffect(() => {
-		async;
-	});
 	return (
 		<>
 			{/* HEADER START */}
