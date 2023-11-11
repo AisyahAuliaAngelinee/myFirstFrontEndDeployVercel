@@ -25,10 +25,10 @@ const Login = () => {
 		event.preventDefault();
 		console.log(email, password, "<<<<<<<<<");
 
-		// !PINJEM SERVER K ADNAN
+		// !PINJEM SERVER K ADNAN https://server.tabletime.online/user/login
 		try {
 			const response = await axios.post(
-				`https://server.tabletime.online/user/login`,
+				`https://phase2-aio.vercel.app/apis/login`,
 				{
 					email,
 					password,
