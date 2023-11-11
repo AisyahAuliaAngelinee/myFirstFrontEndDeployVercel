@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 const Form = () => {
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
+
 	return (
 		<section class="create">
 			<div class="row">

@@ -23,12 +23,10 @@ const router = createBrowserRouter([
 			{
 				path: "/apis/restaurant-app/cuisines",
 				element: <Maintable />,
-				children: [
-					{
-						path: "/apis/restaurant-app/cuisines",
-						element: <Form />,
-					},
-				],
+			},
+			{
+				path: "/apis/restaurant-app/cuisines",
+				element: <Form />,
 			},
 		],
 	},

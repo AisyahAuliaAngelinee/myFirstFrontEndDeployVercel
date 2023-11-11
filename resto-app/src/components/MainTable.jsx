@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -41,6 +42,9 @@ const Maintable = () => {
 		<>
 			<section className="main-list">
 				<h3 className="sub-heading">List Cuisine</h3>
+				<Link to={"https://phase2-aio.vercel.app/apis/restaurant-app/cuisines"}>
+					<button>Create</button>
+				</Link>
 				<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
 					<table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
 						<thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
@@ -90,11 +94,6 @@ const Maintable = () => {
 						</tbody>
 					</table>
 				</div>
-				<link
-					to={"/apis/restaurant-app/cuisines"}
-					className="font-medium text-green-600 dark:text-blue-500 hover:underline">
-					Create New
-				</link>
 			</section>
 		</>
 	);
