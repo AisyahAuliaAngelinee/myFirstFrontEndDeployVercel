@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "../components/Login";
 import Parent from "../views/Parent";
 import Maintable from "../components/MainTable";
+import Form from "../components/Form";
 
 const router = createBrowserRouter([
 	// {
@@ -22,6 +23,12 @@ const router = createBrowserRouter([
 			{
 				path: "/apis/restaurant-app/cuisines",
 				element: <Maintable />,
+				children: [
+					{
+						path: "/apis/restaurant-app/cuisines",
+						element: <Form />,
+					},
+				],
 			},
 		],
 	},
