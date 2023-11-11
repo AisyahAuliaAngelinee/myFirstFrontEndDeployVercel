@@ -1,44 +1,47 @@
-import { useEffect, useState } from "react";
-import "../App.css";
-import React from "react";
 import axios from "axios";
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
-const MainTable = () => {
-	const CUISINE_ADMIN_SERVER_URL = "https://server.tabletime.online/cuisine";
-	const dataCuisineApi = axios.create({ baseURL: CUISINE_ADMIN_SERVER_URL });
+const Maintable = () => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
-	const [cuisineData, setCuisineData] = useState([]);
+	const [fetchCuisine, setFetchCuisine] = useState([]);
 
-	// ?FETCH ALL DATA FROM MAIN TABLE
-	async function fetchCuisineData() {
+	// ?FETCH DATA
+	async function fetchDataCuisine() {
+		const token = localStorage.getItem("token");
+
 		try {
-			setLoading(true);
-			const { data } = await dataCuisineApi.get();
-			console.log(data, "<<<<<");
+			setLoading(false);
+			const response = await axios.get(
+				`https://phase2-aio.vercel.app/apis/restaurant-app/cuisines`,
+				{
+					headers: {
+						Authorization: `Bearer ${token}`,
+					},
+				}
+			);
+			// console.log(response, "<<<<<<<<");
 
-			setCuisineData(data.result.data);
+			setFetchCuisine(response.data.data);
 		} catch (error) {
 			console.log(error.message);
 			setError(error);
 		} finally {
-			setLoading(false);
+			setLoading(true);
 		}
 	}
 
 	useEffect(() => {
-		fetchCuisineData();
+		fetchDataCuisine();
 	}, []);
-
-	if (loading) return <p>Loading</p>;
-	if (error) return <p>{error.message}</p>;
 
 	return (
 		<>
-			<h1>Masuk Table</h1>
-			<h1>{cuisineData.name}</h1>
+			<h1>Main Table</h1>
 		</>
 	);
 };
 
-export default MainTable;
+export default Maintable;

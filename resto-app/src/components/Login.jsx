@@ -23,7 +23,7 @@ const Login = () => {
 
 	const loginSubmit = async (event) => {
 		event.preventDefault();
-		console.log(email, password, "<<<<<<<<<");
+		// console.log(email, password, "<<<<<<<<<");
 
 		// !PINJEM SERVER K ADNAN https://server.tabletime.online/user/login
 		try {
@@ -36,10 +36,10 @@ const Login = () => {
 			);
 			console.log(response, "<<LOGIN INPUT>>");
 
-			localStorage.setItem("token", response.data.access_token);
+			localStorage.setItem("token", response.data.data.access_token);
 
 			// // NAVIGATE TO HOMEPAGE (SERVER)
-			navigate("/cuisines");
+			navigate("/apis/restaurant-app/cuisines");
 		} catch (error) {
 			console.log(error.message);
 		}

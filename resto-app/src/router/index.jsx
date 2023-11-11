@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../components/Login";
 import Parent from "../views/Parent";
-import MainTable from "../components/MainTable";
+import Maintable from "../components/MainTable";
 
 const router = createBrowserRouter([
 	// {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
 				element: <Login />,
 			},
 			{
-				path: "/cuisines",
-				element: <MainTable />,
+				path: "/apis/restaurant-app/cuisines",
+				element: <Maintable />,
 			},
 		],
 	},
