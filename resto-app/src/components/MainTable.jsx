@@ -23,7 +23,7 @@ const Maintable = () => {
 					},
 				}
 			);
-			// console.log(response, "<<<<<<<<");
+			console.log(response, "<<<<<<<<");
 
 			setFetchCuisine(response.data.data);
 		} catch (error) {
@@ -42,7 +42,7 @@ const Maintable = () => {
 		<>
 			<section className="main-list">
 				<h3 className="sub-heading">List Cuisine</h3>
-				<Link to={"https://phase2-aio.vercel.app/apis/restaurant-app/cuisines"}>
+				<Link to={"/apis/restaurant-app/cuisines/create"}>
 					<button>Create</button>
 				</Link>
 				<div className="relative overflow-x-auto shadow-md sm:rounded-lg">

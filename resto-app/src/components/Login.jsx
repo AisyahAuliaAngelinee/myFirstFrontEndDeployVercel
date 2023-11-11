@@ -34,7 +34,7 @@ const Login = () => {
 					password,
 				}
 			);
-			console.log(response, "<<LOGIN INPUT>>");
+			// console.log(response, "<<LOGIN INPUT>>");
 
 			localStorage.setItem("token", response.data.data.access_token);
 

@@ -25,7 +25,7 @@ const router = createBrowserRouter([
 				element: <Maintable />,
 			},
 			{
-				path: "/apis/restaurant-app/cuisines",
+				path: "/apis/restaurant-app/cuisines/create",
 				element: <Form />,
 			},
 		],
